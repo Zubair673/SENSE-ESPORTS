@@ -1,0 +1,134 @@
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Main containers */
+
+.max-w-7xl {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* Navbar */
+
+nav {
+  position: relative;
+  z-index: 50;
+  background: rgba(8, 11, 20, 0.95) !important;
+  backdrop-filter: blur(16px);
+}
+
+/* Hero section */
+
+section {
+  position: relative;
+  scroll-margin-top: 80px;
+}
+
+section.py-24 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+section.py-28 {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+/* Headings */
+
+h1,
+h2,
+h3 {
+  letter-spacing: -0.035em;
+}
+
+h1 {
+  line-height: 1.08;
+}
+
+p {
+  line-height: 1.7;
+}
+
+/* Cards */
+
+.rounded-2xl,
+.rounded-3xl {
+  transition: border-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.group:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(124, 58, 237, 0.10);
+}
+
+/* Buttons */
+
+button,
+a {
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  filter: brightness(1.12);
+}
+
+/* Footer */
+
+footer {
+  background: #070910;
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  .max-w-7xl {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  section.py-24 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  section.py-28 {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  h1 {
+    font-size: clamp(42px, 9vw, 65px);
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+  .max-w-7xl {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  section.py-24,
+  section.py-28 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  h1 {
+    font-size: 43px;
+  }
+}
