@@ -23,9 +23,9 @@ function Footer() {
             <h3 className="text-white font-bold mb-5">Quick Links</h3>
             <div className="flex flex-col gap-3 text-gray-400">
               <a href="/">Home</a>
-              <a href="#games">Games</a>
-              <a href="#tournaments">Tournaments</a>
-              <a href="#about">About Us</a>
+              <a href="/games">Games</a>
+              <a href="/tournaments">Tournaments</a>
+              <a href="/about">About Us</a>
             </div>
           </div>
         </div>
